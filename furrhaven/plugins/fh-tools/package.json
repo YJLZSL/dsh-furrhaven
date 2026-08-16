@@ -1,14 +1,20 @@
 {
   "name": "@dsh-external/dsh-fh-tools",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Furrhaven 写卡工具箱插件：fh_new/build/check/audit + 世界书触发模拟/组件约束/正则测试/识图/扮演工具面",
   "private": true,
   "type": "module",
   "main": "./lib/index.js",
   "types": "./lib/types/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "cordis.patch.yml"
   ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
   "license": "BSD-3-Clause",
   "peerDependencies": {
     "@deepseek-ai/dsh-llm": ">=0.0.1-rc <2",
